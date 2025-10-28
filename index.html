@@ -1,0 +1,108 @@
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Profile</title>
+<style>
+:root {
+  --primary-green: #23d160;
+  --bg-top: #001220;
+  --bg-bottom: #102a43;
+  --text-light: #e5e7eb;
+  --muted: #94a3b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-light);
+}
+
+.card-wrapper {
+  text-align: center;
+}
+
+.card {
+  background: linear-gradient(180deg, #0f172a 10%, #1e293b 100%);
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+.photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 4px solid var(--primary-green);
+}
+
+.name {
+  color: var(--primary-green);
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.position {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.stats {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: left;
+}
+
+.stats h4 {
+  color: var(--primary-green);
+  text-align: center;
+  margin-bottom: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.stats p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-light);
+}
+
+.stats span {
+  color: var(--muted);
+}
+</style>
+</head>
+<body>
+<div class="card-wrapper">
+  <div class="card">
+    <img src="profile.jpg" alt="Foto Mahasiswa" class="photo">
+    <h3 class="name">MUHAMMAD KAUTSAR ALIFAN MUDZAKIR</h3>
+    <p class="position">256612001</p>
+
+    <div class="stats">
+      <h4>Identitas Mahasiswa</h4>
+      <p><strong>Program Studi:</strong> <span>Teknik Informatika</span></p>
+      <p><strong>Fakultas:</strong> <span>Teknik</span></p>
+      <p><strong>Universitas:</strong> <span>Ma'soem University</span></p>
+      <p><strong>Angkatan:</strong> <span>2025</span></p>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
